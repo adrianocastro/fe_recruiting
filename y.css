@@ -1,0 +1,15 @@
+/* Global Styles */
+body{margin:2em;}
+hr{margin:2em 0;}
+dt{font-weight:bold;}
+dd{margin-bottom:1em;}
+ol ul li{list-style:disc;margin:auto;}
+ol ol{list-style-type:upper-latin;}
+u{text-decoration:none;color:#00f;}
+pre,code{font:100% Courier New,Courier,monospace;}
+.examples{font:100% Courier New,Courier,monospace;color:#00f;}
+.details{margin:.2em 1em 1em;color:#666;line-height:120%;}
+#footer{font:85% verdana,sans-serif;}
+#footer hr{margin-top:4em;}
+
+

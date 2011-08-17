@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+<title>Interview Questions for PHP</title>
+<link type="text/css" rel="stylesheet" href="http://us.i1.yimg.com/us.yimg.com/lib/common/lsmfonts20040729.css">
+</head>
+<body>
+
+<h1>Interview Questions for PHP</h1>
+
+<hr>
+
+<h2>Level 1: beginner/junior</h2>
+<p><strong>Can write own code, knows basic data types, can use includes, knows basic programming concepts, can interact with database</strong></p>
+
+<p>CONCEPT Q: What is PHP?</p>
+
+<p>CONCEPT Q: What are the pros and cons of using PHP?</p>
+
+<p>CONCEPT Q: How does PHP differ from JavaScript?</p>
+
+<p>Q: What are the various ways you can output HTML from PHP?</p>
+
+<p>Q: What is the difference between include & include_once? include & require?<br>
+A: If a file called with include_once has already been included, it will not be included again. include produces a warning when it fails, require produces a fatal error (halting execution).</p>
+
+<p>Q: What's the difference between echo "hi $name" and echo 'hi $name'?</p>
+
+<p>Q: What's wrong with this: echo "&lt;a href="$home_url"&gt;Yahoo!&lt;/a&gt;";?&lt;/p&gt;</p>
+
+<p>Q: How can you use PHP to include a specific file, but not complain if it doesn't exist?</p>
+
+<p>Q: Write a function that dynamically generates HTML.</p>
+
+<p>Q: Write a function that dynamically generates JavaScript.</p>
+
+<hr>
+
+<h2>Level 2: intermediate/mid</h2>
+<p><strong>Understands more complex PHP syntax and abilities, can can work with get/post/session/cookie vars, understands HTTP headers, can set up and configure own environment</strong></p>
+
+<p>CONCEPT Q: Why would you want to maintain a user's state?</p>
+
+<p>CONCEPT Q: What are the pros and cons of doing form validation with PHP?</p>
+
+<p>CONCEPT Q: How do you debug a PHP application?</p>
+
+<p>Q: What is the difference between a reference and a regular variable? How do you pass by reference & why would you want to?<br>
+A: Make sure the candidate understand basic references and their usage. You only need to pass by reference if you need to modify the passed-in value. Note that it does not save memory or improve performance to pass by reference.</p>
+
+<p>Q: What is the difference between foo() & @foo()?<br>
+A: Prepending with '@' will ignore any errors that foo() may generate.</p>
+
+<p>Q: What does === do? What's an example of something that will give true for '==', but not '==='?
+A: === checks both equality of the operands as well as their type (including some implicit value conversion). E.g., "0.0" and "0" are true for == and false for ===.q</p>
+
+<p>Q: What are all of the ways you can maintain state within a user's browser instance?</p>
+
+<p>Q: How does a switch behave differently from a if/else?</p>
+
+<p>Q: How would you use PHP to do server-side browser detection?</p>
+
+<p>Q: Which is faster "print" or "echo"?</p>
+
+<p>Q: What is the difference between "==" and "==="?</p>
+
+<p>Q: How would you reverse a string without using strrev() or array_reverse()?</p>
+
+<p>Q: Name some things in the php.ini file that should be configured for a live production site. Name some things that you might have on in your dev site.<br>
+A: They wouldn't have to know specifics, but they would have to know what needs to be done. For example: register_globals always off (and what is register_globals, why is it bad), what level of debug notification, session garbage collection timeouts, magicquotes_gpc (also, define gpc).</p>
+
+<p>Q: Write a function to compute and output the Fibonocci sequence. The Fibonocci sequence is 1,1,2,3,5,8,13,21,... where each number in the series is the sum of the two preceeding numbers, with 1,1 starting the sequence.</p>
+
+<hr>
+
+<h2>Level 3: advanced/senior</h2>
+<p><strong>Can write objects/classes, can optimize code (for performance), can build abstraction layers, can build complex algorithms, has experience with SQL or related languages, has experience with compiled languages (C, C++, Java)</strong></p>
+
+<p>CONCEPT Q: What are the pros and cons of an object-oriented approach in PHP?</p>
+
+<p>CONCEPT Q: What are ways you can unit test your code?</p>
+
+<p>CONCEPT Q: What are ways you can measure the performance of your code?</p>
+
+<p>Q: Write a singleton database connection class.</p>
+
+<p>Q: What is the value of $my_var after the function call? 
+<pre>
+	$my_var = 10;
+	function bar($zoo) {
+	  global  $my_var;
+	  if (count($zoo)) {
+	    unset($my_var);
+	  }
+	}
+	bar(array(1,2));
+</pre>
+	A: $my_var will equal 10. unset, inside a function, will only destroy the local variable. To destroy the global version, you would have to call unset($GLOBALS['my_var']).</p>
+
+<p>Q: Given a line of text $string, how would you write a regular expression to strip all the HTML tags from it?<br>
+A: PHP supports POSIX Extended REs and Perl-compatible ones. Either is fine. 
+<pre>
+	In POSIX:
+	$string = ereg_replace("&lt;[^&gt;]*&gt;", "", $string); 
+	In Perl-compatible:
+	$string = preg_replace("/&lt;[^&gt;]*&gt;/", "", $string); 
+</pre>
+	Extra credit if they mention you should use strip_tags.</p>
+
+<p>Q: How do you serialize data in PHP?<br>
+A: Using serialize and unserialize is often all that is needed. Other ways include WDDX & var_dump.</p>
+
+<p>Q: Which is faster:
+<pre>
+	"if (isset($keys['blah'])) { ... }"   
+	or
+	"if(array_key_exists('blah', $keys)) {...}"
+</pre></p>
+
+<p>Q: What does empty("0") return?</p>
+
+<p>Q: Write a class that represents a stack. The stack must have the following: a push method, a pop method, and a clear method. For the stack of this example, you'll most likely need an array, but don't assume array operators (array_push, array_pop, sizeof, count, etc. exist)<br>
+A:
+<pre>
+	class Stack {
+	  var $_stack;
+	  var $_count;
+	  
+	  function Stack() {
+	    $this-&gt;clear();
+	  }
+	
+	  function clear() {
+	    $this-&gt;_stack = array();
+	    $this-&gt;_count = 0;
+	  }
+	
+	  function push($item) {
+	    $this-&gt;_stack[ $this-&gt;_count ] = $item;
+	    $this-&gt;_count++;
+	  }
+	
+	  function pop() {
+	    if ($this-&gt;_count &gt; 0) {
+	      $this-&gt;_count--;
+	      return $this-&gt;_stack[ $this-&gt;_count ];
+	    } else {
+	      return null;
+	    }
+	  }
+	}
+</pre></p>
+
+<p>Q: What would some of the challenges be in extending the class to keep track of the number of stacks created?<br>
+A: Two obstacles would be PHP's class/static data to track the total number of stacks (although the should be able to find a work around), and PHP's lack of destructors.</p>
+
+<hr>
+
+<p>Contact: <a href="mailto:mikelee@yahoo-inc.com">Mike Lee</a></p>
+
+</body>
+</html>

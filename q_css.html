@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+<title>Interview Questions for CSS</title>
+<link type="text/css" rel="stylesheet" href="http://us.i1.yimg.com/us.yimg.com/lib/common/lsmfonts20040729.css">
+</head>
+<body>
+
+<h1>Interview Questions for CSS</h1>
+
+<hr>
+
+<h2>Level 1: beginner/junior</h2>
+<p><strong>Can stylize basic elements (fonts, colors, backgrounds), can do basic positioning, can create adjustable/user-defined style settings</strong></p>
+
+<p>CONCEPT Q: What is CSS?<br>
+Cascading Style Sheets; a set of rules created by the W3C to control the visual presentation of HTML.</p>
+
+<p>CONCEPT Q: What are the pros and cons of using CSS?<br>
+Pro - <br>
+Con - </p>
+
+<p>CONCEPT Q: What are the pros and cons of an external stylesheet?</p>
+
+<p>CONCEPT Q: What are the pros and cons of making font sizes adjustable by users?</p>
+
+<p>Q: What elements on a web page can CSS be applied to?</p>
+
+<p>Q. What is the difference between an "inline" and "block" element?</p>
+
+<p>Q: What is the difference between "visibility:hidden" and "display:none"?</p>
+
+<p>Q: Are there pro's or con's to using display:none;?</p>
+
+<p>Q: Consider the various units of measurement in CSS: em, px, pts, etc. Make a case for when it is appropriate/wise to use one over the other for defining things such as font size, padding, margins,
+etc.</p>
+
+<p>Q: How can you make the fonts adjustable, so that users can use their browser to change the size of the text?<br>
+A: Use flexible font size measurements - EMs, ENs, % percents, or keywords</p>
+
+<p>Q: Explain the following definitions:
+<pre>
+	#content {color:#ccc}
+	.content {color:#ccc} 
+	#content .content {color:#ccc}
+	#content, .content {color:#ccc}
+</pre></p>
+
+<hr>
+
+<h2>Level 2: intermediate/mid</h2>
+<p><strong>Can write own styles, can optimize declarations, can write cross-browser styles and hacks, knows CSS1, understands box model concept, understands how CSS can be used with JS (for DHTML)</strong></p>
+
+<p>CONCEPT Q: What is the box model and how does it apply to CSS?</p>
+
+<p>CONCEPT Q: What are the pros and cons of absolutely positioning an element on a page?</p>
+
+<p>CONCEPT Q: Describe some ways to use CSS to speed up the rendering of tables.</p>
+
+<p>Q: How can you change the mouse cursor to a hand using CSS?<br>
+A: Use the cursor property - cursor:pointer (bonus points - cursor:hand for IE5x)</p>
+
+<p>Q: What are the five possible values for "Position"?<br>
+A: static, relative, absolute, fixed, inherit</p>
+
+<p>Q: What is the default/initial value for "Position"?<br>
+A: static</p>
+
+<p>Q: What are some ways of hiding CSS from IE Win?</p>
+
+<p>Q: What are some ways of hiding CSS from IE Mac?</p>
+
+<p>Q: What properties make up an element's width according to the box model?</p>
+
+<p>Q: Please talk briefly about the Voice Family Hack, and/or Tantek's Hack.</p>
+
+<p>Q: How can you use CSS to improve website Accessibility?</p>
+
+<p>Q: How do you specify different styles for different media? Discuss why you'd do this.</p>
+
+<p>Q. Explain the relationship between the "float" and "clear" properties.</p>
+
+<p>Q: What is the following?
+<pre>
+	&lt;style&gt;
+	#header {border-width:0 2px 4px 2px;}
+	&lt;/style&gt;
+</pre>
+	A: top=0 right=2 bottom=4 left=2 (bonus: right & left can be combined for optimization)</p>
+
+<p>Q: Please comment on the following STYLE block
+<pre>
+	&lt;style&gt;
+	body,body table,table td,table,tr,td {font-family:verdana;}
+	.bigheader      {font-size:24pt;}
+	.redbutton      {background-color:FF0000;}
+	#contentDIV     {padding-bottom:20px;}
+	.submit_bottom  {color:#F60;}
+	&lt;/style&gt;
+</pre></p>
+
+<p>Q: How would you create the following using solely CSS?
+<pre>
+	|--------------------------------------|
+	| Header                          Link |
+	|--------------------------------------|
+</pre>
+	(additional: if they float both the Header and Link pieces, what happens to 
+	the border of the box if the browser follows the box model correctly?)</p>
+
+<p>Q: Please optimize the following block
+<pre>
+	&lt;style&gt;
+	.myClass {
+		font-family:arial,verdana,sans-serif;
+		border-width:10px;
+		border-width-left:20px;
+		border-width-bottom:5px;
+		color:#ff6600;
+		font-weight:normal;
+		text-decoration:none;
+		font-size:1em;}
+	&lt;/style&gt;
+</pre>
+
+<hr>
+
+<h2>Level 3: advanced/senior</h2>
+<p><strong>Can come up with new cross-browser styles and hacks, understands rendering issues, understands doctype issues, knows CSS2</strong></p>
+
+<p>CONCEPT Q: What are the ways you can deal with x-browser issues? What are the pros and cons of each?</p>
+
+<p>CONCEPT Q: How do you manage your x-browser CSS hacks?</p>
+
+<p>CONCEPT Q: What are the pros and cons of a CSS-driven layout?</p>
+
+<p>CONCEPT Q: How does a doctype effect a page?</p>
+
+<p>Q: Name some of the pseudo classes defined in the CSS-2 specification.</p>
+
+<p>Q: Describe attribute selectors and what browsers support them.</p>
+
+<p>Q: What is the difference between Descendant selectors and Child selectors?</p>
+
+<p>Q: What are the five possible values for the "overflow" property?</p>
+
+<p>Q: Discuss possible uses for the "overflow" property.</p>
+
+<p>Q: What is the difference between the "outline" property and the "border" property?</p>
+
+<p>Q: Explain the difference between strict and quirks mode, including some x-browser differences and how to switch modes.</p>
+
+<p>Q: Explain the following definitions:
+<pre>
+	#content {font:normal small/1.2em arial,verdana,helvetica} #content {margin:10px 0 5px}
+</pre></p>
+
+<p>Q: What is the following?
+<pre>
+	&lt;style&gt;
+	div#header&gt;a {color:red;}
+	&lt;/style&gt;
+</pre></p>
+
+<p>Q: Assuming the following HTML, write the CSS to render these four DIVs in each of the four corners of the browser's content area:
+<pre>
+	&lt;div id="one"&gt;One&lt;/div&gt;
+	&lt;div id="two"&gt;Two&lt;/div&gt;
+	&lt;div id="three"&gt;Three&lt;/div&gt;
+	&lt;div id="four"&gt;Four&lt;/div&gt;
+</pre></p>
+
+<p>Q: Explain these CSS declarations:
+<pre>
+	#car { color:#00f; }
+	#car p { color:#00f; }
+	#car p b { color:#00f; }
+	#car&gt;p b { color:#00f; }
+</pre></p>
+
+<p>Q: What color is each sentence in this webpage, assuming it renders correctly?
+<pre>
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;style type="text/css"&gt;
+	p { color: blue; }
+	div#one p { color: green; }
+	div#one&gt;p { color: red; }
+	&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;p&gt;Sentence 1.&lt;/p&gt;
+	&lt;p&gt;Sentence 2.&lt;/p&gt;
+	&lt;div id="one"&gt;
+		&lt;p&gt;Sentence 3.&lt;/p&gt;
+		&lt;p&gt;Sentence 4.&lt;/p&gt;
+		&lt;div&gt;
+			&lt;p&gt;Sentence 5.&lt;/p&gt;
+			&lt;p&gt;Sentence 6.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;p&gt;Sentence 7.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+</pre>
+	A: 1 and 2 are blue; 3, 4 and 7 are red, and 5 and 6 are green.) (Bonus question: Netscape 7 and IE6, which one gets this page right and renders it correctly? Answer: N7 gets it right,  IE6 renders the red sentences as green.)</p>
+
+<p>Q: Explain the following definitions and which browsers they should apply to:
+<pre>
+	#content {color:blue}
+	html&gt;body #content {color:red}
+	*html #content {color:green}
+</pre></p>
+
+<p>Q: Explain the difference between the following three rules:
+<pre>
+	body div {background-color:blue;}
+	html&gt;body div{background-color:red;}
+	@media all{html&gt;body div{background-color:yellow;}}
+</pre>
+	  (bonus: How will the following browsers interpret the above rules: IE6, NS7, Safari, Mac IE5x)</p>
+
+<p>Q: What DHTML behaviors result from the following style rules and what browsers support these?
+<pre>
+	1. input[type="text"]:focus{background-color:yellow;}
+	2. #navigation span{display:none;}
+	   #navigation:hover span{display:block;}
+</pre></p>
+
+<hr>
+
+<p>Contact: <a href="mailto:mikelee@yahoo-inc.com">Mike Lee</a></p>
+
+</body>
+</html>

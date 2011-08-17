@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+<title>Interview Questions for JS/DHTML/DOM</title>
+<link type="text/css" rel="stylesheet" href="http://us.i1.yimg.com/us.yimg.com/lib/common/lsmfonts20040729.css">
+</head>
+<body>
+
+<h1>Interview Questions for JS/DHTML/DOM</h1>
+
+<hr>
+
+<h2>Level 1: beginner/junior</h2>
+<p><strong>Can use & modify code from elsewhere, can write common functions (rollovers, form validation, pop-up windows, browser detection), knows basic programming concepts</strong></p>
+
+<p>CONCEPT Q: What is JavaScript?</p>
+
+<p>CONCEPT Q: What are the pros and cons of using JavaScript?</p>
+
+<p>CONCEPT Q: What are the pros and cons of an external JavaScript file?</p>
+
+<p>Q: How do you create a pop-up window?<br>
+A: window.open</p>
+
+<p>Q: How do you get the URL of an image on the page?<br>
+A: Through document.images[] array, document.imageThatUserWants</p>
+
+<p>Q: How do you get to a form element on the page?<br>
+A: document.formName.elementName (bonus: forms[] array, elements[] array)</p>
+
+<p>Q: How do you submit a form using JavaScript?<br>
+A: document.formName.submit()</p>
+
+<p>Q: List the ways that you would include JavaScript in your pages<br>
+A: inline in HTML, embedded w/ &lt;script&gt; tag, external w/ &lt;script&gt; tag</p>
+
+<p>Q: What extension do JavaScript files typically have?<br>
+A: .js</p>
+
+<p>Q: When calling this function: showAppt(thisDy, thisMo, thisYr, hasAM, hasPM, hasAllDy), how many arguments would you need to pass?<br>
+A: 6 (bonus: it depends on how many are used in the function)</p>
+
+<p>Q: How can you find out what browser the user is using?<br>
+A: navigator.userAgent, object detection</p>
+
+<p>Q: What is a variable?</p>
+
+<p>Q: What is a function?</p>
+
+<p>Q: What do these do? ||, &&, ==  &gt;, &lt;<br>
+A: Evaluate or, and, equal, greater than, less than</p>
+
+<hr>
+
+<h2>Level 2: intermediate/mid</h2>
+<p><strong>Can write own script, can write common DHTML functions (hide/show layers, basic animation), knows document.all/layers/getElementById, knows DOM0 (forms[], links[], images[], etc), knows DOM1, understands object detection, knows basic event handling, knows intermediate programming concepts</strong></p>
+
+<p>CONCEPT Q: What is DHTML? How does it differ from JavaScript?</p>
+
+<p>CONCEPT Q: What are the pros and cons of DHTML?</p>
+
+<p>CONCEPT Q: What are the pros and cons of doing form validation with JavaScript?</p>
+
+<p>Q: Name some methods of the String object.<br>
+A: substring(), split(), charAt(), indexOf()</p>
+
+<p>Q: Name some methods of the Array object.<br>
+A: push(), pop(), shift(), unshift(), splice(), slice()</p>
+
+<p>Q: How can you test if a variable is undefined?</p>
+
+<p>Q: How can you test which type of variable you're dealing with?</p>
+
+<p>Q: If you spawn a pop-up window from a parent page (such as a calendar from an travel page), what could possibly prevent the two forms from communicating with each other?</p>
+
+<p>Q: How and why might you use array.join in place document.write?</p>
+
+<p>Q: What is a JavaScript event?</p>
+
+<p>Q: Write a function to compute and output the Fibonocci sequence. The Fibonocci sequence is 1,1,2,3,5,8,13,21,... where each number in the series is the sum of the two preceeding numbers, with 1,1 starting the sequence.</p>
+
+<p>Q: List at least one type of variable available in JavaScript.<br>
+A: string, array, object, number/integer, function, regular expression</p>
+
+<p>Q: What is an operator? Give a few examples.</p>
+
+<p>Q: How do you specify the return value of a function?<br>
+A: Use the keyword "return", example: return [value]</p>
+
+<p>Q: Is it possible to have a constant variable in JavaScript?<br>
+A: No</p>
+
+<p>Q: Is the following statement legal? Why or why not? What would varC be?
+<pre>
+	varA = "hi";
+	varB = 1;
+	varC = varA + varB;
+</pre></p>
+
+<p>Q: In the following function, which of the two variables is global?
+<pre>
+	function doSomething() {
+		var temp1 = 1;
+		temp2 = 5;
+	}
+</pre></p>
+
+<p>Q: What is the difference between a "do...while" loop and a "while" loop?</p>
+
+<p>Q: Please write a function that will display a list of users (passed to you in an array).</p>
+
+<p>Q: Given this list, how would you write it onto a page with alternating row colors?
+<pre>
+	var names = new Array( "Joe Smith", "Bob Kilty", "Karen Jones", "Sally Percy" );
+</pre></p>
+
+<p>Q: What is the DOM? Discuss some of it's intricacies as applied to Internet Explorer vs. Netscape.</p>
+
+<p>Q: Is it possible to implement a modal window in JavaScript? If so, how?</p>
+
+<p>Q: Explain the difference between the following three lines of code:
+<pre>
+	document.myform.elements["field1"].name
+	document.myform.field1.name
+	document.myform["field1"].name
+</pre></p>
+
+<hr>
+
+<h2>Level 3: advanced/senior</h2>
+<p><strong>Can write object-oriented JS, understands event models, understands remote scripting, can optimize code, can build abstraction layers, can modify DOM, can build complex animation, can build complex algorithms</strong></p>
+
+<p>CONCEPT Q: Is it possible to make a server request without reloading the page? What are the pros and cons of this approach?</p>
+
+<p>CONCEPT Q: Can object-oriented design be applied to JavaScript? What are the pros and cons of this approach?</p>
+
+<p>CONCEPT Q: Is JavaScript a proceedural or object-oriented language? How so?</p>
+
+<p>CONCEPT Q: Describe the various JavaScript event models.</p>
+
+<p>CONCEPT Q: What is event-driven programming?</p>
+
+<p>Q: Is JavaScript intrepreted or compiled in/by the browser?<br>
+A: Intrepreted</p>
+
+<p>Q: Is JavaScript strongly or weakly typed? (bonus: why?)<br>
+A: Weakly typed (because variables cannot be cast as a particular data type)</p>
+
+<p>Q: How do you use Try and Catch to handle exceptions?</p>
+
+<p>Q: What three event handlers do you need to implement/work with when designing a "drag and drop" interface?</p>
+
+<p>Q: How can you implement encapsulation when designing custom objects in JavaScript?</p>
+
+<p>Q: Which browser supports attachEvent and/or addEventListener?<br>
+A: attachEvent: IE, addEventListener: Mozilla/Netscape</p>
+
+<p>Q: What are all of the ways that an event can be binded to an HTML element? What are the advantages and disadvantages to each method of assignment?<br>
+A: attachEvent, addEventListener, document.object=event, &lt;html onevent=""&gt;. First two allow multiple event bindings, but are browser-specific. Second allows a specification of bubble or trickle event movement. Third and fourth are x-browser but only allow one binding. Fourth also mixes logic with markup.</p>
+
+<p>Q: Can an HTML Object be extended using the prototype keyword?<br>
+A: No, The HTMLElement Object is not native; the element can be extended using Object.someName = function(){}</p>
+
+<p>Q: How is garbage collection handled in JS?<br>
+A: Garbage collection is handled using a mark-and-sweep collection method.</p>
+
+<p>Q: How can one object inherit the properties and methods of another?<br>
+A: This is done using the prototype keyword in the following manner.
+	function x(){ return; }
+	x.prototype = new y();
+	
+	function y(){ this.val = 0;return; }
+	y.prototype.getVal = function(){ return val;}
+	y.prototype.setVal = function(input){ val = input;}
+	
+	var myObject = new x();
+	myObject.getVal() // returns 0; 
+</pre></p>
+
+<p>Q: Considering the following HTML:
+<pre>
+	&lt;ul&gt;
+		&lt;li&gt;one&lt;/li&gt;
+		&lt;li&gt;two&lt;/li&gt;
+		&lt;li&gt;three&lt;/li&gt;
+		&lt;li&gt;four&lt;/li&gt;
+	&lt;/ul&gt;
+</pre>
+	1. Using the DOM, describe two different ways of retrieving a collection of the LI elements contained
+within the UL.
+	2. Why/when would you choose one over the other?</p>
+
+<p>Q: Consider the following HTML:
+<pre>
+	&lt;form&gt;
+		&lt;div&gt;
+			&lt;input type="button" name="changediv" value="Change Div" onclick="ChangeDiv(this);"&gt;
+		&lt;/div&gt;	
+	&lt;/form&gt;
+</pre>
+	Without changing the above HTML, write/implement the function "ChangeDiv()" that will change the background color of the containing DIV to "#cccccc".</p>
+
+<p>Q: How would you design an OO implementation that allows developer to instantiate a Panel object that can be dragged and dropped on the screen? Show the best implementation using JS, DOM, OO design, and no markup. Focus on the constructor and how would you tie the DOM events to your OO design.<br>
+A: Check if the candidate's listeners can be tied to the method of each object or if they implement global event JS manager functions; also check if the candidate knows about event and OO basics.</p>
+
+<p>Q: How would you design a client application in JavaScript that allows users to simply read and send email messages without a page reload? How could the user be alerted of new messages? Describe the entire interaction flow between your JS code and the server-side application when this happens.<br>
+A: The implementation should use Remote Scripting methods (XMLHTTPRequest, document.load, iframes, or other similar approaches). Check to see if they are aware of server-pulling (and other possible approaches).</p>
+
+<p>Q: Say you had to build a client application that composed of various data sets displayed as tables. Next to each set is an "Update" button. Each time the user clicks on the button, that data set is updated. Every request made can take between 1 to 30 seconds. If the user made multiple clicks within a 10 second timeframe, what would happen? (If candidate realizes there would be a problem, ask: How could you solve this problem?)<br>
+A: Check to see if the candidate is aware of cuncurrent calls and the need for a dispatch function. If candidate uses the same communication channel, then check if the candidate properly uses lock/unlock or serializing mechanisms, stack calls, or fifo. If the candidate uses concurrent asynchronous channels, then ask the candidate about synchronous approach solutions.</p>
+
+<p>Q: Please describe your solution to the following scenario: Within the browser-frame are present two boxes. One of them moves only on the horizontal axis, while the other only on the vertical axis. As they move through the frame, when they reach either edge they turn around and move in the opposite direction.  Additionally if they ever hit each other, again they both reverse direction.</p>
+
+<hr>
+
+<p>Contact: <a href="mailto:mikelee@yahoo-inc.com">Mike Lee</a></p>
+
+</body>
+</html>

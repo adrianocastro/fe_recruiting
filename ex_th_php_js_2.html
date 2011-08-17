@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<title>Yahoo!</title>
+<link type="text/css" rel="stylesheet" href="http://us.i1.yimg.com/us.yimg.com/lib/common/lsmfonts20040729.css">
+<script type="text/javascript" language="javascript" src="http://us.js1.yimg.com/us.yimg.com/lib/g/util/yg_browserext.js"></script>
+</head>
+<body>
+
+<h1>Take-Home Exercise</h1>
+
+<pre>
+CSS   - 1
+JS    - 2
+PHP   - 3
+</pre>
+
+<hr>
+
+<p>Please take a look at the <a href="ex_th_php_js_2.html" onclick="yg_popup('ex_th_screenshot.html?registration_form.gif','screenshot',800,500,2);return false">attached GIF image</a>. The intended functionality is:</p>
+
+<p>The user must fill out all fields and hit "Submit T" to submit a search.</p>
+
+For the Age fields, return an appropriate error message if:<br>
++ Either field is empty<br>
++ The values are not numbers<br>
++ The value of the first field is greater than the latter<br>
++ Either value exceeds 100<br><br>
+
+For the City/Zip field, return an appropriate error message if:<br>
++ The field is empty<br>
++ If a zip code is entered, if the zip is invalid (not 5 characters or 10 with a dash)<br>
++ If a city is entered, if the value is an invalid city name (not alphabetic with special characters: dash [-] period [.] apostrophe ['] and space [ ])<br>
+
+<p>Use both client-side and server-side validation. For client-side errors, use an Alert dialogue to display all of the relevant errors and have the focus brought back to the first field with an error. For server-side errors, reload the page and display the relevant errors above the module.</p>
+
+<p>If no errors are present, the subsequent page should list out the user's selections. If the user returns to the Search Module (even through a new browser session), the previous data should be retained.</p>
+
+All of the field values are:<br>
++ I'm a: [Man] [Woman]<br>
++ Seeking a: [Woman] [Man]<br>
++ Located within: [50 miles] [only in the city] [5 miles] [10 miles] [15 miles] [25 miles] [100 miles] [250 miles]<br><br>
+
+The default field values are:<br>
++ I'm a:     [Man]<br>
++ Seeking a: [Woman]<br>
++ Age: [20] to [40]<br>
++ Located within: [50 miles]<br>
++ Show photo profiles only: [checked]<br>
+
+<p>Build this functionality using cross-browser client-side code (for IE5+/NS7.1+), PHP, and a MySQL database. Optimize for download & render speed and server performance.</p>
+
+<p>When you are finished, please send us the code and all associated files.</p>
+
+<hr>
+
+<p>Contact: <a href="mailto:mikelee@yahoo-inc.com">Mike Lee</a></p>
+
+</body>
+</html>
