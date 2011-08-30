@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Take-Home Exercise</title>
+    <link type="text/css" rel="stylesheet" href="http://us.i1.yimg.com/us.yimg.com/lib/common/lsmfonts20040729.css">
+    <script type="text/javascript" language="javascript" src="http://us.js1.yimg.com/us.yimg.com/lib/g/util/yg_browserext.js"></script>
+    <style>
+        img {
+            border: 1px solid #000;
+        }
+        span.strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Take-Home Exercise</h1>
+
+    <p>Using the attached screenshots please build this as a single page.</p>
+
+    <p>The code should be semantically correct and display with visual fidelity in IE6+, FF3.5+, Chrome and Safari 5. It should degrade to a non-stylized layout that still retains some form of information hierarchy and usability for older browsers. It should also be accessible and retain its aspect ratio if the user changes the browser or platform’s text size settings. The page should be optimised for download and render speed. You’re welcome to use a JavaScript framework but, where possible, please use pure JavaScript.</p>
+
+    <p>Please note:
+        <ul>
+            <li>The center and right columns should be at least 800 pixels high</li>
+            <li>Most of the backgrounds are gradients</li>
+            <li>Some elements have drop-shadows</li>
+        </ul>
+    </p>
+
+    <p>When you’re finished, please send us the code and all associated files. You may slice images/icons from these mockups.</p>
+
+    <h2>Base page</h2>
+        <img src="i/y_exercise_base.png">
+
+    <h2>Mail hover</h2>
+    <p>The <span class="strong">Mail hover</span> should open when the user mouses over the Mail row and remain open unless the user clicks on the closing X icon or mouses over the Finance row. Clicking on the mail row should redirect the user to http://mail.yahoo.com/.</p>
+    <p>Hitting the "Sign up Now" button should validate the form as per the following rules:
+        <ul>
+            <li>all fields must be filled</li>
+            <li>the email address must be valid</li>
+        </ul>
+    If the validation is successful an alert should pop-up announcing "Thank you for signing up".
+    </p>
+    <img src="i/y_exercise_mail_hover.png">
+
+    <h2>Finance hover</h2>
+    <p>The <span class="strong">Finance hover</span> open/close interaction should be the same as the <span class="strong">Mail hover</span>. Clicking on the Finance row should redirect the user to http://finance.yahoo.com/. For extra points the content inside should be loaded via AJAX.</p>
+    <img src="i/y_exercise_finance_hover.png">
+</body>
+</html>
+
