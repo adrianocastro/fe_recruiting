@@ -19,7 +19,7 @@
 
     <p>Using the attached screenshots please build this as a single page.</p>
 
-    <p>The code should be semantically correct and display with visual fidelity in IE6+, FF3.5+, Chrome and Safari 5. It should degrade to a non-stylized layout that still retains some form of information hierarchy and usability for older browsers. It should also be accessible and retain its aspect ratio if the user changes the browser or platform’s text size settings. The page should be optimised for download and render speed. You’re welcome to use a JavaScript framework but, where possible, please use pure JavaScript.</p>
+    <p>The code should be semantically correct and display with visual fidelity in IE6+, FF3.5+, Chrome and Safari 5. It should degrade to a non-stylized layout that still retains some form of information hierarchy and usability for older browsers. It should also be accessible and retain its aspect ratio if the user changes the browser or platform’s text size settings. The page should be optimised for download and render speed. For the behaviour layer you’re welcome to use a JavaScript framework but, where possible, please use pure JavaScript.</p>
 
     <p>Please note:
         <ul>
@@ -29,19 +29,25 @@
         </ul>
     </p>
 
-    <p>When you’re finished, please send us the code and all associated files. You may slice images/icons from these mockups.</p>
+    <p>When you’re finished, please send us the code and all associated files. You may slice images from these mockups.</p>
 
     <h2>Base page</h2>
         <img src="i/y_exercise_base.png">
 
     <h2>Mail hover</h2>
-    <p>The <span class="strong">Mail hover</span> should open when the user mouses over the Mail row and remain open unless the user clicks on the closing X icon or mouses over the Finance row. Clicking on the mail row should redirect the user to http://mail.yahoo.com/.</p>
-    <p>Hitting the "Sign up Now" button should validate the form as per the following rules:
+    <p>The <span class="strong">Mail hover</span> should open when the user mouses over the Mail row and remain open until the user clicks on the closing X icon or mouses over the Finance row. Clicking on the mail row should redirect the user to http://mail.yahoo.com/.</p>
+    <p>Hitting the "Sign up Now" submit button should validate the form as per the following rules:
         <ul>
             <li>all fields must be filled</li>
             <li>the email address must be valid</li>
         </ul>
-    If the validation is successful an alert should pop-up announcing "Thank you for signing up".
+        Upon successfully validating the form should be replaced with the following text:
+        <pre>
+        Hi &lt;first_name&gt;,
+        
+        Thank you for signing up!
+        </pre>
+        Where <code>&lt;first_name&gt;</code> should be the user’s provided first name. Please replace only the form, the rest of the content should stay in place.
     </p>
     <img src="i/y_exercise_mail_hover.png">
 
